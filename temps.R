@@ -19,6 +19,7 @@ temps<-data.frame(茶=c("ほうじ茶","くき茶","玄米茶","玉緑茶","煎�
   arrange(.,極小,極度) %>%
   select(.,茶,極小,冷温,高温,極度)
 
+
 #Formatted table with color gradient according to temperature
 formattable(temps,
             align = c("r","l","l","l","l"),
@@ -27,6 +28,21 @@ formattable(temps,
               "冷温"= color_tile("#FFEC8B", "#FF8C00"),
               "高温"= color_tile("#FFEC8B", "#FF8C00"),
               "極度"= color_tile("#FFEC8B", "#FF8C00")))
+
+#With english labels
+eng.temps<-temps %>%
+  mutate(., Tea=c("Gyokuro","Kabusecha","Asamushicha","Fukamushicha",
+       "Sencha","Matcha","Tamaryokucha","Kukicha",
+       "Genmaicha","White","Light Oolong","Green",
+       "Houjicha","Sheng Puerh","Dark Oolong","Shou Puerh"))
+formattable(eng.temps,
+            align = c("r","l","l","l","l","l"),
+            list("茶" = formatter("span",style = ~ style(font.weight = "bold")), 
+                 "極小"= color_tile("#FFEC8B", "#FF8C00"),
+                 "冷温"= color_tile("#FFEC8B", "#FF8C00"),
+                 "高温"= color_tile("#FFEC8B", "#FF8C00"),
+                 "極度"= color_tile("#FFEC8B", "#FF8C00"),
+                 "Tea" = formatter("span",style = ~ style(font.weight = "bold"))))
 
 #Dumbell plot comparing the ranges of reccomended temperatures
 ggplot(temps, aes(x=reorder(茶, 極小), xend=reorder(茶, 極小), y=極小)) + 
