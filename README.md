@@ -4,8 +4,7 @@ Table & plots of recommended tea steeping temperature by type. Made in my spare 
 
 ### Simple table with tea type, minimum temperature, 33rd percentile, 66th percentile, and maximum temperatures
 
-![Temperature Table](/temps.png)
-![English Tea Names](/eng.temps.png)
+![Temperature Table with English Names](/eng.temps.png)
 
 ### Modified dumbell plot showing temperature ranges
 
