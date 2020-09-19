@@ -1,5 +1,5 @@
 # tea_temps
-[*Open*](gitpod.io/#https://github.com/ryancahildebrandt/tea_temps) *in gitpod*
+[*Open*](https://gitpod.io/#https://github.com/ryancahildebrandt/tea_temps) *in gitpod*
 
 Table & plots of recommended tea steeping temperature by type. Made in my spare time for quick reference when tea time rolls around! [**Here**](https://github.com/ryancahildebrandt/tea_temps/blob/master/temps.html) is an html output of the R script, and below are the tables and plots.
 
