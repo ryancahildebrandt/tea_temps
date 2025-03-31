@@ -1,5 +1,6 @@
 # tea_temps
-[*Open*](https://gitpod.io/#https://github.com/ryancahildebrandt/tea_temps) *in gitpod*
+[![Open in gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/ryancahildebrandt/tea_temps)
+[![This project contains 0% LLM-generated content](https://brainmade.org/88x31-dark.png)](https://brainmade.org/)
 
 Table & plots of recommended tea steeping temperature by type. Made in my spare time for quick reference when tea time rolls around! [**Here**](https://github.com/ryancahildebrandt/tea_temps/blob/master/temps.html) is an html output of the R script, and below are the tables and plots.
 
